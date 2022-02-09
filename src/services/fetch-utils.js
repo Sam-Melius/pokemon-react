@@ -16,5 +16,5 @@ export async function getSinglePokemon(id) {
     .match({ id })
     .single();
 
- return checkError(response);
+  return checkError(response);
 }

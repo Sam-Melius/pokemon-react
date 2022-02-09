@@ -1,15 +1,15 @@
+import React from 'react';
 import { BrowserRouter as Router,
   Switch,
-  Route,
-  Link } from 'react-router-dom';
+  Route, } from 'react-router-dom';
 import './App.css';
 import PokemonDetail from './PokemonDetail';
 import PokemonsPage from './PokemonsPage';
 
-function App() {
+export default function App() {
   return (
     <Router>
-      <div>
+      <div className='App'>
         <Switch>
           <Route exact path='/'>
             <PokemonsPage />
@@ -23,4 +23,4 @@ function App() {
   );
 }
 
-export default App;
+
