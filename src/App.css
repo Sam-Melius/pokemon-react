@@ -1,4 +1,11 @@
 .App {
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -35,4 +42,19 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.pokemon-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon {
+  margin: 20px;
+}
+
+.pokemon, .pokemon-img {
+  width:150px;
 }
