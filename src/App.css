@@ -1,5 +1,13 @@
 .App {
+  width: 80%;
+  margin: 0 auto;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .App-logo {
@@ -35,4 +43,53 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.pokemon-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: orangered;
+}
+
+.pokemon {
+  margin: 20px;
+  border: double;
+  border-radius: 10px;
+  background-color: lightblue;
+}
+
+.pokemon, .pokemon-img {
+  width:100px;
+  background-color: lightblue;
+}
+.pokemon-detail {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokemon-detail, .poke-data {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.pokemon-detail, .poke-img {
+  width:400px;
+  
+}
+
+.pokemon-detail .poke-data p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: double orangered;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+  background-color: lightblue;
 }
